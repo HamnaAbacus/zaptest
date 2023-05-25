@@ -36,3 +36,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: Upload ZAP Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: ZAP Report
+          path: ZAP_2.11.0/report.html
